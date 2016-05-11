@@ -21,6 +21,20 @@ examples = {
     '어제 저희 모임에 와 주시어서 고맙십니다.',
 }
 
+class Sentence (object):
+    def __init__(self, **kwargs):
+        self.raw_constituents = kwargs
+        self.raw = self.raw_constituents
+    def __repr__(self):
+            sentence = ' '.join([
+                self.raw['subject'] + self.raw['subject_particle'],
+                self.raw['location'] + self.raw['location_particle'],
+                self.raw['object'] + self.raw['object_particle'],
+                self.raw['verb'],
+            ])
+            return sentence
+        
+
 def test1(**kwargs):
     """
     >>> print test1(
@@ -34,12 +48,7 @@ def test1(**kwargs):
     ...     )
     앤드류가 집에서 점심을 머거요
     """
-    sentence = ' '.join([
-        kwargs['subject'] + kwargs['subject_particle'],
-        kwargs['location'] + kwargs['location_particle'],
-        kwargs['object'] + kwargs['object_particle'],
-        kwargs['verb'],
-    ])
+    sentence = Sentence(**kwargs)
     return sentence
 
 def test2(): pass
