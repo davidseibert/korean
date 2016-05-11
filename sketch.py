@@ -1,5 +1,7 @@
 # coding: utf-8
 
+import unittest
+
 examples = {
     #1
     "Andrew eats lunch at home.":
@@ -25,42 +27,31 @@ class Sentence (object):
     def __init__(self, **kwargs):
         self.raw_constituents = kwargs
         self.raw = self.raw_constituents
+    def __eq__(self, other):
+        return repr(self)==other
     def __repr__(self):
-            sentence = ' '.join([
-                self.raw['subject'] + self.raw['subject_particle'],
-                self.raw['location'] + self.raw['location_particle'],
-                self.raw['object'] + self.raw['object_particle'],
-                self.raw['verb'],
-            ])
-            return sentence
-        
+        sentence = ' '.join([
+            self.raw['subject'] + self.raw['subject_particle'],
+            self.raw['location'] + self.raw['location_particle'],
+            self.raw['object'] + self.raw['object_particle'],
+            self.raw['verb'],
+        ])
+        return sentence
 
-def test1(**kwargs):
-    """
-    >>> print test1(
-    ...     subject='앤드류',
-    ...     subject_particle='가',
-    ...     location='집',
-    ...     location_particle='에서',
-    ...     object='점심',
-    ...     object_particle='을',
-    ...     verb='머거요',
-    ...     )
-    앤드류가 집에서 점심을 머거요
-    """
-    sentence = Sentence(**kwargs)
-    return sentence
-
-def test2(): pass
-def test3(): pass
-def test4(): pass
-def test5(): pass
-def test6(): pass
-
-def testmod():
-    import doctest
-    VERBOSE = False
-    doctest.testmod(verbose=VERBOSE, optionflags=doctest.NORMALIZE_WHITESPACE)
+class TestSentence(unittest.TestCase):
+    def test1(self):
+        self.assertEquals(
+            Sentence(
+                subject='앤드류',
+                subject_particle='가',
+                location='집',
+                location_particle='에서',
+                object='점심',
+                object_particle='을',
+                verb='머거요',
+                ), 
+            '앤드류가 집에서 점심을 머거요'
+            )
 
 if __name__ == '__main__': 
-    testmod()
+    unittest.main()
