@@ -21,28 +21,24 @@ examples = {
     '어제 저희 모임에 와 주시어서 고맙십니다.',
 }
 
-subject = '앤드류'
-subject_particle = '가'
-location = '집'
-location_particle = '에서'
-object = '점심'
-object_particle = '을'
-verb = '머거요'
-
-
-def test1():
+def test1(**kwargs):
     """
-    Basic, naive sentence generator.
-    
-    >>> print test1()
+    >>> print test1(
+    ...     subject='앤드류',
+    ...     subject_particle='가',
+    ...     location='집',
+    ...     location_particle='에서',
+    ...     object='점심',
+    ...     object_particle='을',
+    ...     verb='머거요',
+    ...     )
     앤드류가 집에서 점심을 머거요
-    
     """
     sentence = ' '.join([
-        subject + subject_particle,
-        location + location_particle,
-        object + object_particle,
-        verb,
+        kwargs['subject'] + kwargs['subject_particle'],
+        kwargs['location'] + kwargs['location_particle'],
+        kwargs['object'] + kwargs['object_particle'],
+        kwargs['verb'],
     ])
     return sentence
 
