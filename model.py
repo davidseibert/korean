@@ -27,6 +27,22 @@ class Sentence (object):
             part for part in parts if part
             ])
         return sentence
-
+        
+class Syllable (object):
+    def __init__(self, syl):
+        self.lead = None
+        self.vowel = None
+        self.tail = None
+        
+        self._analyze(syl)
+        
+    def _analyze(self, syl):
+        _ord = ord(syl)
+        print 'ord = {}'.format(_ord)
+        print 'ord / 588 = {}'.format(_ord / 588)
+        print 'ord % 588 = {}'.format(_ord % 588)
+        
 if __name__ == '__main__':
     pass
+    s = Syllable(u'가')
+    
