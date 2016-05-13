@@ -1,37 +1,28 @@
 # coding: utf-8
 
-from helpers import CONSOLE_FONT, MORPHEME_CONSOLE_COLOR, WORD_CONSOLE_COLOR
+import helpers
 
 import phonology
 
-DEBUG = False
-PYTHONISTA = False
-if PYTHONISTA:
-    import console
-    console.set_font(*CONSOLE_FONT)
-
-class Morpheme (object):
+class Morpheme(helpers.Mixin):
+    CONSOLE_COLOR = helpers.MORPHEME_CONSOLE_COLOR
+    
     def __init__(self, input):
         self.input = input
-        
-        if DEBUG:
-            self.show_processing()
-    
-    def show_processing(self):
-        if PYTHONISTA:
-            console.set_color(MORPHEME_CONSOLE_COLOR)
-        print self.input, '-->'
-        
 
-class Word (object):
-    def __init__(self, input, case=None):
-        self.input = input
-        self.set_case(case)
-        
-        
-        if DEBUG:
-            self.show_processing()
+class Root(Morpheme):
+    pass
+
+class Affix(Morpheme):
+    pass
     
+
+class Word (helpers.Mixin):
+    CONSOLE_COLOR = helpers.WORD_CONSOLE_COLOR
+    
+    def __init__(self, input):
+        self.input = input
+                         
     def __str__(self):
         self.analyze()
         self.synthesize()
@@ -40,18 +31,17 @@ class Word (object):
     def analyze(self):
         self.syllables = [phonology.Syllable(i) for i in self.input]        
     
+    def has_tail(self):
+        return self.syllables[-1].has_tail()
+    
+    def debug(self):
+        print self.input, '-->'
+        
+class Noun (Word):
+
     def set_case(self, case):
         self.case = case
     
-    def has_tail(self):
-        return self.syllables[-1].has_tail()
-
-    def show_processing(self):
-        if PYTHONISTA:
-            console.set_color(*WORD_CONSOLE_COLOR)
-        print self.input, '-->'
-
-class Noun (Word):
     def synthesize(self):
         self.inflect()
 
@@ -66,6 +56,8 @@ class Verb (Word):
 
 def main():
     dave = Word(u'데이브')
+    dave.debug()
     emma = Word(u'연정')
+    emma.debug()
                         
 if __name__ == '__main__': main()
