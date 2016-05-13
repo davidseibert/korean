@@ -5,7 +5,7 @@ from helpers import CONSOLE_FONT, MORPHEME_CONSOLE_COLOR, WORD_CONSOLE_COLOR
 import phonology
 
 DEBUG = False
-PYTHONISTA = True
+PYTHONISTA = False
 if PYTHONISTA:
     import console
     console.set_font(*CONSOLE_FONT)
@@ -28,12 +28,13 @@ class Word (object):
         self.input = input
         self.set_case(case)
         
-        self.analyze()
         
         if DEBUG:
             self.show_processing()
     
     def __str__(self):
+        self.analyze()
+        self.synthesize()
         return ''.join([str(i) for i in self.syllables])
     
     def analyze(self):
@@ -42,16 +43,25 @@ class Word (object):
     def set_case(self, case):
         self.case = case
     
+    def has_tail(self):
+        return self.syllables[-1].has_tail()
+
     def show_processing(self):
         if PYTHONISTA:
             console.set_color(*WORD_CONSOLE_COLOR)
         print self.input, '-->'
 
 class Noun (Word):
-    pass
+    def synthesize(self):
+        self.inflect()
+
+    def inflect(self):
+        self.case.apply(self)
+
     
 class Verb (Word):
-    pass
+    def synthesize(self):
+        pass
 
 
 def main():

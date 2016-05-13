@@ -1,51 +1,54 @@
 # coding: utf-8
 
 import unittest
+import lexicon
 from syntax import Sentence
+from morphology import Noun
 
-example_verb_only = (
-    '머거요',
-     Sentence(
-        verb='머거요',
-        ).flatten()
-)
 
-example_subject_verb = (
-    '연정이 머거요',
-     Sentence(
-        subject='연정',
-        verb='머거요',
-        ).flatten()
-)
+class Experiment(object):
+    def __init__(self, canon, hypo):
+        self.canon = canon
+        self.hypo = hypo
+    def test(self, test_case):
+        test_case.assertEquals(self.canon, str(self.hypo))
 
-example_subject_object_verb = (
-    '데이브가 점심을 머거요',
-     Sentence(
-        subject='데이브',
-        object='점심',
-        verb='머거요',
-        ).flatten()
-)
+class TestSentences(unittest.TestCase):
 
-example_subject_location_object_verb = (
-    '엘리가 집에서 트리트를 머거요',
-     Sentence(
-        subject='엘리',
-        location='집',
-        object='트리트',
-        verb='머거요',
-        ).flatten()
-)
-
-class TestSentence(unittest.TestCase):
     def test_verb_only(self):
-        self.assertEquals(*example_verb_only)
+        Experiment(
+            '머거요',
+             Sentence(
+                 verb=lexicon.eat,
+         )).test(self)
+
     def test_subject_verb(self):
-        self.assertEquals(*example_subject_verb)
+        Experiment(
+            '연정이 머거요',
+            Sentence(
+                subject=lexicon.emma,
+                verb=lexicon.eat,
+         )).test(self)
+
     def test_subject_object_verb(self):
-        self.assertEquals(*example_subject_object_verb)
+        Experiment(
+            '데이브가 점심을 머거요',
+            Sentence(
+                subject=lexicon.dave,
+                object=lexicon.lunch,
+                verb=lexicon.eat,
+         )).test(self)
+
     def test_subject_location_object_verb(self):
-        self.assertEquals(*example_subject_location_object_verb)
+        Experiment(
+            '엘리가 집에서 트리트를 머거요',
+            Sentence(
+                subject=lexicon.elly,
+                location=lexicon.house,
+                object=lexicon.treat,
+                verb=lexicon.eat,
+         )).test(self)
+
 
 if __name__ == '__main__': 
     unittest.main(verbosity=2)

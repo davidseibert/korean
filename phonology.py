@@ -12,7 +12,7 @@ BASE_OFFSET = 44032
 TAIL_PERIOD = len(tails)
 RHYME_PERIOD = TAIL_PERIOD * len(vowels)
 DEBUG = False
-PYTHONISTA = True
+PYTHONISTA = False
 if PYTHONISTA:
     import console
     console.set_font(*CONSOLE_FONT)
@@ -30,8 +30,11 @@ class Syllable (object):
             self.show_processing()
     
     def __str__(self):
-        return self.whole
+        return self.whole.encode('utf-8')
         
+    def has_tail(self):
+        return self.tail
+
     def analyze(self):        
         normalized_code_point = ord(self.input) - BASE_OFFSET
         
