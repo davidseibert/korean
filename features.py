@@ -98,7 +98,6 @@ class Com(Gender):
 # Animacy
 class Animacy(NominalInflectionalFeature):
     pass
-
 class Anim(Animacy): 
     """animate"""
     pass
