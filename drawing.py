@@ -45,5 +45,6 @@ tree = result.getvalue()
 tree = tree.encode('utf-8')
 text = '... some text ... '
 #pydoc.pager(tree * 10)
-print tree * 10
+#print tree * 10
+print news
 
