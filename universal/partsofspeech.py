@@ -4,56 +4,56 @@ class PartOfSpeech(object):
     pass
 
 # Open
-class ADJ(PartOfSpeech):
+class Adj(PartOfSpeech):
     """Adjective"""
     pass
-class ADV(PartOfSpeech):
+class Adv(PartOfSpeech):
     """Adverb"""
     pass
-class INTJ(PartOfSpeech):
+class Intj(PartOfSpeech):
     """Interjection"""
     pass
-class NOUN(PartOfSpeech):
+class Noun(PartOfSpeech):
     """Noun"""
     pass
-class PROPN(NOUN):
+class Propn(Noun):
     """Proper Noun"""
     pass
-class VERB(PartOfSpeech):
+class Verb(PartOfSpeech):
     """Verb"""
     pass
 
 #Closed
-class ADP(PartOfSpeech):
+class Adp(PartOfSpeech):
     """Adposition"""
     pass
-class AUX(PartOfSpeech):
+class Aux(PartOfSpeech):
     """Auxiliary Verb"""
     pass
-class CONJ(PartOfSpeech):
+class Conj(PartOfSpeech):
     """Coordinating Conjunction"""
     pass
-class DET(PartOfSpeech):
+class Det(PartOfSpeech):
     """Determiner"""
     pass
-class NUM(PartOfSpeech):
+class Num(PartOfSpeech):
     """Numeral"""
     pass
-class PART(PartOfSpeech):
+class Part(PartOfSpeech):
     """Particle"""
     pass
-class PRON(NOUN):
+class Pron(Noun):
     """Pronoun"""
     pass
-class SCONJ(PartOfSpeech):
+class Sconj(PartOfSpeech):
     """Subordinating Conjunction"""
     pass
 
 #Other
-class PUNCT(PartOfSpeech):
+class Punct(PartOfSpeech):
     """Punctuation"""
     pass
-class SYM(PartOfSpeech):
+class Sym(PartOfSpeech):
     """Symbol"""
     pass
 class X(PartOfSpeech):

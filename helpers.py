@@ -1,9 +1,10 @@
 # coding: utf-8
 
+import sys
 
 # Switches
 
-PYTHONISTA = True
+PYTHONISTA = (sys.platform == 'iphoneos')
 DEBUG = True
 
 
