@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ScappleDocument Version="1.1" ID="4E2E605C-D24C-4B78-990A-E967CCAD8DDB">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="178.066406,494.363281" Width="53.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>lexemes</String>
+            <ConnectedNoteIDs>3, 39, 41</ConnectedNoteIDs>
+            <PointsToNoteIDs>39</PointsToNoteIDs>
+        </Note>
+        <Note ID="1" FontSize="12.0" Position="511.851562,434.234375" Width="144.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>select the words we need</String>
+            <Formatting>
+                <FormatRange Italic="Yes">0,24</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="145.984375,433.957031" Width="188.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>build the words we have available</String>
+            <Formatting>
+                <FormatRange Italic="Yes">0,33</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="169.285156,552.238281" Width="72.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>morphemes</String>
+            <ConnectedNoteIDs>0, 41</ConnectedNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="72.398438,655.765625" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Cloud"></Border>
+                <Fill>0.733475 0.960021 0.615133</Fill>
+            </Appearance>
+            <String>syntax</String>
+            <ConnectedNoteIDs>16, 38</ConnectedNoteIDs>
+            <PointsToNoteIDs>16</PointsToNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="150.046875,664.710938" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>arrange the words into a parsable structure</String>
+            <Formatting>
+                <FormatRange Italic="Yes">0,43</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="405.707031,664.304688" Width="84.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Cloud"></Border>
+                <Fill>0.733475 0.960021 0.615133</Fill>
+            </Appearance>
+            <String>morphosyntax</String>
+            <ConnectedNoteIDs>21, 37</ConnectedNoteIDs>
+            <PointsToNoteIDs>21</PointsToNoteIDs>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="518.285156,667.390625" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>configure the words per syntactic features</String>
+            <Formatting>
+                <FormatRange Italic="Yes">0,42</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="804.589844,545.121094" Width="107.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Cloud"></Border>
+                <Fill>0.733475 0.960021 0.615133</Fill>
+            </Appearance>
+            <String>morphophonemics</String>
+            <ConnectedNoteIDs>30-31</ConnectedNoteIDs>
+            <PointsToNoteIDs>31</PointsToNoteIDs>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="812.035156,696.855469" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>adjust words per orthographic conventions</String>
+            <Formatting>
+                <FormatRange Italic="Yes">0,41</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="419.917969,443.335938" Width="63.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Cloud"></Border>
+                <Fill>0.733475 0.960021 0.615133</Fill>
+            </Appearance>
+            <String>semantics</String>
+            <ConnectedNoteIDs>17, 39</ConnectedNoteIDs>
+            <PointsToNoteIDs>17</PointsToNoteIDs>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="511.351562,463.902344" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>arrange the words in meaningful structure</String>
+            <Formatting>
+                <FormatRange Italic="Yes">0,41</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="52.820312,713.363281" Width="83.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Jagged"></Border>
+                <Fill>0.893882 0.940019 0.608857</Fill>
+            </Appearance>
+            <String>syntactic dependencies</String>
+            <ConnectedNoteIDs>4, 25</ConnectedNoteIDs>
+            <PointsToNoteIDs>25</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="17" FontSize="12.0" Position="408.617188,506.683594" Width="86.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Jagged"></Border>
+                <Fill>0.893882 0.940019 0.608857</Fill>
+            </Appearance>
+            <String>semantic dependencies</String>
+            <ConnectedNoteIDs>10, 19</ConnectedNoteIDs>
+            <PointsToNoteIDs>19</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="19" FontSize="12.0" Position="547.582031,513.933594" Width="53.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>lexemes</String>
+            <ConnectedNoteIDs>17, 38</ConnectedNoteIDs>
+            <PointsToNoteIDs>38</PointsToNoteIDs>
+        </Note>
+        <Note ID="21" FontSize="12.0" Position="400.261719,733.261719" Width="95.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Jagged"></Border>
+                <Fill>0.893882 0.940019 0.608857</Fill>
+            </Appearance>
+            <String>morphological dependencies</String>
+            <ConnectedNoteIDs>6, 28-29</ConnectedNoteIDs>
+            <PointsToNoteIDs>28-29</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,13</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="24" FontSize="12.0" Position="63.722656,439.398438" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Cloud"></Border>
+                <Fill>0.733475 0.960021 0.615133</Fill>
+            </Appearance>
+            <String>lexicology</String>
+            <ConnectedNoteIDs>41</ConnectedNoteIDs>
+            <PointsToNoteIDs>41</PointsToNoteIDs>
+        </Note>
+        <Note ID="25" FontSize="12.0" Position="185.691406,720.839844" Width="53.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>lexemes</String>
+            <ConnectedNoteIDs>16, 37</ConnectedNoteIDs>
+            <PointsToNoteIDs>37</PointsToNoteIDs>
+        </Note>
+        <Note ID="28" FontSize="12.0" Position="554.261719,715.59375" Width="53.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>lexemes</String>
+            <ConnectedNoteIDs>21, 29-30</ConnectedNoteIDs>
+            <PointsToNoteIDs>30</PointsToNoteIDs>
+        </Note>
+        <Note ID="29" FontSize="12.0" Position="544.261719,765.351562" Width="72.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>morphemes</String>
+            <ConnectedNoteIDs>21, 28</ConnectedNoteIDs>
+        </Note>
+        <Note ID="30" FontSize="12.0" Position="636.964844,715.59375" Width="108.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Square"></Border>
+                <Fill>0.940019 0.726138 0.572499</Fill>
+            </Appearance>
+            <String>morphosyntax tree</String>
+            <ConnectedNoteIDs>8, 28</ConnectedNoteIDs>
+            <PointsToNoteIDs>8</PointsToNoteIDs>
+        </Note>
+        <Note ID="31" FontSize="12.0" Position="819.0,634.0" Width="80.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Jagged"></Border>
+                <Fill>0.893882 0.940019 0.608857</Fill>
+            </Appearance>
+            <String>phonotactic 
+constraints</String>
+            <ConnectedNoteIDs>8, 34-35</ConnectedNoteIDs>
+            <PointsToNoteIDs>34-35</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,13</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="32" FontSize="12.0" Position="948.847656,492.238281" Width="53.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>lexemes</String>
+            <ConnectedNoteIDs>33, 36</ConnectedNoteIDs>
+            <PointsToNoteIDs>36</PointsToNoteIDs>
+        </Note>
+        <Note ID="33" FontSize="12.0" Position="939.355469,550.238281" Width="72.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>morphemes</String>
+            <ConnectedNoteIDs>32, 34</ConnectedNoteIDs>
+        </Note>
+        <Note ID="34" FontSize="12.0" Position="947.855469,609.238281" Width="55.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>syllables</String>
+            <ConnectedNoteIDs>31, 33, 35</ConnectedNoteIDs>
+        </Note>
+        <Note ID="35" FontSize="12.0" Position="942.855469,667.238281" Width="65.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2"></Border>
+                <Fill>0.705209 0.884833 0.940019</Fill>
+            </Appearance>
+            <String>phonemes</String>
+            <ConnectedNoteIDs>31, 34</ConnectedNoteIDs>
+        </Note>
+        <Note ID="36" FontSize="12.0" Position="1040.277344,492.238281" Width="45.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Square"></Border>
+                <Fill>0.940019 0.726138 0.572499</Fill>
+            </Appearance>
+            <String>hangul</String>
+            <ConnectedNoteIDs>32</ConnectedNoteIDs>
+        </Note>
+        <Note ID="37" FontSize="12.0" Position="268.753906,720.839844" Width="67.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Square"></Border>
+                <Fill>0.940019 0.726138 0.572499</Fill>
+            </Appearance>
+            <String>syntax tree</String>
+            <ConnectedNoteIDs>6, 25</ConnectedNoteIDs>
+            <PointsToNoteIDs>6</PointsToNoteIDs>
+        </Note>
+        <Note ID="38" FontSize="12.0" Position="636.082031,513.933594" Width="87.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Square"></Border>
+                <Fill>0.940019 0.726138 0.572499</Fill>
+            </Appearance>
+            <String>semantics tree</String>
+            <ConnectedNoteIDs>4, 19</ConnectedNoteIDs>
+            <PointsToNoteIDs>4</PointsToNoteIDs>
+        </Note>
+        <Note ID="39" FontSize="12.0" Position="267.058594,494.136719" Width="46.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="2" Style="Square"></Border>
+                <Fill>0.940019 0.726138 0.572499</Fill>
+            </Appearance>
+            <String>lexicon</String>
+            <ConnectedNoteIDs>0, 10</ConnectedNoteIDs>
+            <PointsToNoteIDs>10</PointsToNoteIDs>
+        </Note>
+        <Note ID="41" FontSize="12.0" Position="60.785156,514.269531" Width="66.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="2" Style="Jagged"></Border>
+                <Fill>0.893882 0.940019 0.608857</Fill>
+            </Appearance>
+            <String>derivation rules</String>
+            <ConnectedNoteIDs>0, 3, 24</ConnectedNoteIDs>
+            <PointsToNoteIDs>0, 3</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,10</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="45" FontSize="23.0" Position="83.507812,383.425781" Width="21.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.86215 0.86215 0.86215</Fill>
+            </Appearance>
+            <String>1</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="47" FontSize="23.0" Position="84.585938,602.074219" Width="21.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.86215 0.86215 0.86215</Fill>
+            </Appearance>
+            <String>3</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="48" FontSize="23.0" Position="439.324219,384.664062" Width="21.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.86215 0.86215 0.86215</Fill>
+            </Appearance>
+            <String>2</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="49" FontSize="23.0" Position="436.433594,609.207031" Width="21.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.86215 0.86215 0.86215</Fill>
+            </Appearance>
+            <String>4</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="50" FontSize="23.0" Position="851.90625,475.269531" Width="21.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.86215 0.86215 0.86215</Fill>
+            </Appearance>
+            <String>5</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,1</FormatRange>
+            </Formatting>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>0-4, 6, 8, 10, 19, 24-25, 28-39, 45, 47-50</AutoFit>
+    <NoteStyles>
+        <Style Name="Blue Bubble" ID="F22910DB-D2AC-4414-B258-7C1DB78FDDD6" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="FA3E255C-4710-43B4-99D8-2DB79698FAB9" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="collection" ID="7B2BE7BE-449A-4286-A5C5-A3622923228F" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Center</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <FillColor>0.705209 0.884833 0.940019</FillColor>
+            <Size>53.0,150.0</Size>
+        </Style>
+        <Style Name="comment" ID="B6617FEB-ACEC-45D3-A13F-7F78109B6AA8" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>0</BorderThickness>
+            <Size>188.0,150.0</Size>
+            <IsItalic>Yes</IsItalic>
+        </Style>
+        <Style Name="dependencies" ID="53BBA5E7-546C-49C5-8BAB-674EC01560E6" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Center</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderStyle>Jagged</BorderStyle>
+            <FillColor>0.893882 0.940019 0.608857</FillColor>
+            <Size>66.0,150.0</Size>
+        </Style>
+        <Style Name="Green Bubble" ID="042A900D-9712-4B9D-B88F-3C44D93CD0CE" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882328 0.80198</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="78AA7726-282B-4E2B-AAB2-6938961FED60" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+        <Style Name="process" ID="E7B5D937-D590-4DF0-A4EA-C2962E4D0116" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderStyle>Cloud</BorderStyle>
+            <FillColor>0.733475 0.960021 0.615133</FillColor>
+            <Size>61.0,150.0</Size>
+        </Style>
+        <Style Name="Red Text" ID="1C7AF71E-8C83-47D9-85D4-D6E2EF5A3B8C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="structure" ID="3E12896A-EAF9-4785-B0AA-9531FC4AF2A9" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>2</BorderThickness>
+            <BorderStyle>Square</BorderStyle>
+            <FillColor>0.940019 0.726138 0.572499</FillColor>
+            <Size>29.0,150.0</Size>
+        </Style>
+        <Style Name="Title Text" ID="36060031-88CC-4A04-8751-91EFBCC554FF" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Yellow Bubble" ID="1AD51F6E-5454-4EF6-96BF-F46A50E30C28" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>

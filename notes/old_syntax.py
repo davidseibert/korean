@@ -1,7 +1,8 @@
 # coding: utf-8
 
-from morphology import Noun, Verb
-from phonology import Syllable
+from korean.morphophonemics.phonology import Syllable
+from notes.old_morphology import Noun, Verb
+
 
 class Case (object):
     pass        

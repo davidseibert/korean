@@ -1,0 +1,37 @@
+1
+2
+build the words we have available
+select the words we need
+lexicology
+derivation rules
+lexemes
+lexicon
+semantics
+semantic dependencies
+lexemes
+semantics tree
+syntax
+syntactic dependencies
+lexemes
+syntax tree
+morphosyntax
+morphological dependencies
+morphemes
+lexemes
+morphosyntax tree
+morphophonemics
+phonotactic 
+constraints
+phonemes
+syllables
+morphemes
+lexemes
+hangul
+morphemes
+arrange the words in meaningful structure
+5
+3
+4
+arrange the words into a parsable structure
+configure the words per syntactic features
+adjust words per orthographic conventions

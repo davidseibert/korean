@@ -1,8 +1,7 @@
 # coding: utf-8
 
-import helpers
-
-import phonology
+from korean.morphophonemics import phonology
+from korean.utils import helpers
 
 class Morpheme(helpers.Mixin):
     CONSOLE_COLOR = helpers.MORPHEME_CONSOLE_COLOR

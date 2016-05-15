@@ -1,7 +1,6 @@
 # coding: utf-8
 
-from helpers import CONSOLE_FONT, SYLLABLE_CONSOLE_COLOR
-import helpers
+from korean.utils.helpers import CONSOLE_FONT, SYLLABLE_CONSOLE_COLOR
 
 leads = [u'ㄱ', u'ㄲ', u'ㄴ', u'ㄷ', u'ㄸ', u'ㄹ', u'ㅁ', u'ㅂ', u'ㅃ', u'ㅅ', u'ㅆ', u'ㅇ', u'ㅈ', u'ㅉ', u'ㅊ', u'ㅋ', u'ㅌ', u'ㅍ', u'ㅎ']
 
@@ -30,8 +29,8 @@ class Syllable (object):
         if DEBUG:
             self.show_processing()
     
-    def __str__(self):
-        return self.whole.encode('utf-8')
+    def spellout(self):
+        return self.whole
         
     def has_tail(self):
         return self.tail

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<opml version="1.0">
+    <head>
+        <title>phases</title>
+        <dateCreated>2016-05-15 12:27:47 -0400</dateCreated>
+    </head>
+    <body>
+        <outline text="1"></outline>
+        <outline text="2"></outline>
+        <outline text="build the words we have available"></outline>
+        <outline text="select the words we need"></outline>
+        <outline text="lexicology"></outline>
+        <outline text="derivation rules"></outline>
+        <outline text="lexemes"></outline>
+        <outline text="lexicon"></outline>
+        <outline text="semantics"></outline>
+        <outline text="semantic dependencies"></outline>
+        <outline text="lexemes"></outline>
+        <outline text="semantics tree"></outline>
+        <outline text="syntax"></outline>
+        <outline text="syntactic dependencies"></outline>
+        <outline text="lexemes"></outline>
+        <outline text="syntax tree"></outline>
+        <outline text="morphosyntax"></outline>
+        <outline text="morphological dependencies"></outline>
+        <outline text="morphemes"></outline>
+        <outline text="lexemes"></outline>
+        <outline text="morphosyntax tree"></outline>
+        <outline text="morphophonemics"></outline>
+        <outline text="phonotactic 
+constraints"></outline>
+        <outline text="phonemes"></outline>
+        <outline text="syllables"></outline>
+        <outline text="morphemes"></outline>
+        <outline text="lexemes"></outline>
+        <outline text="hangul"></outline>
+        <outline text="morphemes"></outline>
+        <outline text="arrange the words in meaningful structure"></outline>
+        <outline text="5"></outline>
+        <outline text="3"></outline>
+        <outline text="4"></outline>
+        <outline text="arrange the words into a parsable structure"></outline>
+        <outline text="configure the words per syntactic features"></outline>
+        <outline text="adjust words per orthographic conventions"></outline>
+    </body>
+</opml>
