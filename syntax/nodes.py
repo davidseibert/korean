@@ -39,7 +39,7 @@ class Node(Base):
         pass
 
     def tree(self):
-        return Tree(self.__class__.__name__, [self.stem.spellout()])
+        return Tree(self.__class__.__name__, [self.spellout()])
     
 class Verb(Node):
     """Verb"""
@@ -69,7 +69,7 @@ class TransitiveVerb(Verb):
 
     def tree(self):
         dependencies = self.complements + self.adjuncts
-        dep_style_tree = Tree('-' + self.stem.spellout(), [i.tree() for i in dependencies])
+        dep_style_tree = Tree('-' + self.spellout(), [i.tree() for i in dependencies])
         node_style_tree = Tree(self.__class__.__name__, [dep_style_tree])
         return node_style_tree
 

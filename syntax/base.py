@@ -1,4 +1,4 @@
-from nltk.tree import Tree
+from tree import Tree
 from StringIO import StringIO
 import sys
 from copy import copy
