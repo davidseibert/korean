@@ -1,4 +1,4 @@
-from base import Base, Tree
+from base import Base
 from dependencies import Nsubj, Dobj, Location
 from korean.morphophonemics import phonology
 

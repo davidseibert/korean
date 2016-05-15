@@ -1,4 +1,4 @@
-from base import Base, Tree
+from base import Base
 from morphology import NomSuffix, AccSuffix, LocSuffix
 
 class Dependency(Base):
