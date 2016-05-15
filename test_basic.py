@@ -2,6 +2,7 @@
 
 from korean.lexicology.lexicon import Eat, Emma, Elly, Dave, Lunch, House, Treat
 from korean.utils.spellout_test import SpelloutTest
+import unittest
 
 
 class TestSentences(SpelloutTest):
@@ -33,8 +34,8 @@ class TestSentences(SpelloutTest):
 
 
 def test():
-    #unittest.main(verbosity=2)
-    print Eat(subject=Elly(), object=Treat(), at=House()).ascii()
+    unittest.main(verbosity=2)
+    #print Eat(subject=Elly(), object=Treat(), at=House()).ascii()
 
 if __name__ == '__main__':
     test()
