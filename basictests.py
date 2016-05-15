@@ -1,54 +1,41 @@
 # coding: utf-8
 
 import unittest
-import lexicon
-from syntax import Sentence
-from morphology import Noun
+from utils.spellout import SpelloutTest
 
+from lexicon import Eat, Emma, Elly, Dave, Lunch, House, Treat
 
-class Experiment(object):
-    def __init__(self, canon, hypo):
-        self.canon = canon
-        self.hypo = hypo
-    def test(self, test_case):
-        test_case.assertEquals(self.canon, str(self.hypo))
-
-class TestSentences(unittest.TestCase):
+class TestSentences(SpelloutTest):
 
     def test_verb_only(self):
-        Experiment(
-            '머거요',
-             Sentence(
-                 verb=lexicon.eat,
-         )).test(self)
+        self.check(
+            u'머거요',
+            Eat(subject=None, object=None)
+        )
 
     def test_subject_verb(self):
-        Experiment(
-            '연정이 머거요',
-            Sentence(
-                subject=lexicon.emma,
-                verb=lexicon.eat,
-         )).test(self)
+        self.check(
+            u'연정이 머거요',
+            Eat(subject=Emma(), object=None)
+        )
 
     def test_subject_object_verb(self):
-        Experiment(
-            '데이브가 점심을 머거요',
-            Sentence(
-                subject=lexicon.dave,
-                object=lexicon.lunch,
-                verb=lexicon.eat,
-         )).test(self)
+        self.check(
+            u'데이브가 점심을 머거요',
+            Eat(subject=Dave(), object=Lunch())
+        )
 
     def test_subject_location_object_verb(self):
-        Experiment(
-            '엘리가 집에서 트리트를 머거요',
-            Sentence(
-                subject=lexicon.elly,
-                location=lexicon.house,
-                object=lexicon.treat,
-                verb=lexicon.eat,
-         )).test(self)
+        self.check(
+            u'엘리가 트리트를 집에서 머거요',
+            Eat(subject=Elly(), object=Treat(), at=House())
+        )
 
 
-if __name__ == '__main__': 
-    unittest.main(verbosity=2)
+
+def test():
+    #unittest.main(verbosity=2)
+    print Eat(subject=Elly(), object=Treat(), at=House()).ascii()
+
+if __name__ == '__main__':
+    test()

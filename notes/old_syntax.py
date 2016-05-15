@@ -1,6 +1,6 @@
 # coding: utf-8
 
-from morphology import Noun, Verb
+from old_morphology import Noun, Verb
 from phonology import Syllable
 
 class Case (object):

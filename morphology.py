@@ -1,63 +1,48 @@
 # coding: utf-8
 
-import helpers
-
 import phonology
 
-class Morpheme(helpers.Mixin):
-    CONSOLE_COLOR = helpers.MORPHEME_CONSOLE_COLOR
-    
+class Morpheme(object):
+    allomorphs = [None]
+    def __init__(self):
+        self.default_allomorph = self.allomorphs[0]
+        self.current_allomorph = self.default_allomorph
+        self.analyze()
+
+    def spellout(self):
+        text = ''.join([i.spellout() for i in self.syllables])
+        return text
+
+    def analyze(self):
+        if self.allomorphs[0]:
+            self.syllables = [phonology.Syllable(i) for i in self.current_allomorph]
+
+
+class Stem(Morpheme):
     def __init__(self, input):
         self.input = input
+        super(Stem, self).__init__()
 
-class Root(Morpheme):
-    pass
+    def analyze(self):
+        self.syllables = [phonology.Syllable(i) for i in self.input]
 
 class Affix(Morpheme):
     pass
-    
 
-class Word (helpers.Mixin):
-    CONSOLE_COLOR = helpers.WORD_CONSOLE_COLOR
-    
-    def __init__(self, input):
-        self.input = input
-                         
-    def __str__(self):
-        self.analyze()
-        self.synthesize()
-        return ''.join([str(i) for i in self.syllables])
-    
-    def analyze(self):
-        self.syllables = [phonology.Syllable(i) for i in self.input]        
-    
-    def has_tail(self):
-        return self.syllables[-1].has_tail()
-    
-    def debug(self):
-        print self.input, '-->'
-        
-class Noun (Word):
-
-    def set_case(self, case):
-        self.case = case
-    
-    def synthesize(self):
-        self.inflect()
-
-    def inflect(self):
-        self.case.apply(self)
-
-    
-class Verb (Word):
-    def synthesize(self):
+class ConstantSuffix(Affix):
+    def set_allomorph(self, node):
         pass
 
+class AlternatingSuffix(Morpheme):
+    def set_allomorph(self, node):
+        tail = node.has_tail()
+        if tail:
+            self.current_allomorph = self.allomorphs[1]
+        self.analyze()
 
-def main():
-    dave = Word(u'데이브')
-    dave.debug()
-    emma = Word(u'연정')
-    emma.debug()
-                        
-if __name__ == '__main__': main()
+class NomSuffix(AlternatingSuffix):
+    allomorphs = [u'가', u'이']
+class AccSuffix(AlternatingSuffix):
+    allomorphs = [u'를', u'을']
+class LocSuffix(ConstantSuffix):
+    allomorphs = [u'에서']

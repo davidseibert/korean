@@ -7,6 +7,11 @@ import sys
 PYTHONISTA = (sys.platform == 'iphoneos')
 DEBUG = True
 
+def same(test_case, one, two):
+    test_case.assertEqual(one, two,
+        msg="\nTarget: '{}'\nResult: '{}'".format(one.encode('utf-8'), two.encode('utf-8'))
+                          )
+
 
 # Console Config
 
@@ -35,3 +40,7 @@ class Mixin (object):
         if PYTHONISTA:
             console.set_color(*self.CONSOLE_COLOR)
 
+def print_heading(text):
+    print text
+    print "=" * len(text)
+    print
