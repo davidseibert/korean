@@ -1,9 +1,8 @@
 # coding: utf-8
 
-import unittest
-from utils.spellout import SpelloutTest
+from korean.lexicology.lexicon import Eat, Emma, Elly, Dave, Lunch, House, Treat
+from korean.utils.spellout_test import SpelloutTest
 
-from lexicon import Eat, Emma, Elly, Dave, Lunch, House, Treat
 
 class TestSentences(SpelloutTest):
 

@@ -1,6 +1,7 @@
 # coding: utf-8
 
-import phonology
+from korean.morphophonemics import phonology
+
 
 class Morpheme(object):
     allomorphs = [None]

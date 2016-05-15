@@ -1,6 +1,7 @@
 from base import Base, Tree
 from dependencies import Nsubj, Dobj, Location
-import phonology
+from korean.morphophonemics import phonology
+
 
 class Node(Base):
     def __init__(self, **kwargs):

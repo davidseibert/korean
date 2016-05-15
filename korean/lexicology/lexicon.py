@@ -1,7 +1,8 @@
 # coding: utf-8
 
-from syntax import Propn, Place, Noun, TransitiveVerb
-from morphology import Stem
+from korean.lexicology.morphology import Stem
+from korean.lexicology.nodes import Propn, Place, Noun, TransitiveVerb
+
 
 class Emma(Propn):
     stem = Stem(u'연정')

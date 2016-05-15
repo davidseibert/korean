@@ -1,7 +1,6 @@
 # coding: utf-8
 
-from utils.helpers import CONSOLE_FONT, SYLLABLE_CONSOLE_COLOR
-from utils import helpers
+from korean.utils.helpers import CONSOLE_FONT, SYLLABLE_CONSOLE_COLOR
 
 leads = [u'ㄱ', u'ㄲ', u'ㄴ', u'ㄷ', u'ㄸ', u'ㄹ', u'ㅁ', u'ㅂ', u'ㅃ', u'ㅅ', u'ㅆ', u'ㅇ', u'ㅈ', u'ㅉ', u'ㅊ', u'ㅋ', u'ㅌ', u'ㅍ', u'ㅎ']
 
