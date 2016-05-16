@@ -7,8 +7,6 @@ from korean.lexicon import Dave, Lunch, Emma, Elly, Eat, Treat, House
 
 # Test-specific Imports
 
-
-
 class TestSentences(SpelloutTest):
 
     def test_verb_only(self):

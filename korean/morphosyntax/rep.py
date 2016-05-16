@@ -6,24 +6,17 @@ class MorphosyntacticRepresentation(object):
                 'object': 'Acc',
                 'at': 'Loc',
             }
-    def __init__(self, syntactic_representation):
-        self.words = syntactic_representation.words
-        self.set_cases()
+    def __init__(self, words):
+        self._words = words
+        self._set_cases()
 
-    def set_case(self, word, case):
-        word.case = case
-
-    def set_cases(self):
-        for word in self.words:
+    def _set_cases(self):
+        for word in self._words:
             for role, case in self.cases.iteritems():
-                if hasattr(word, role) and getattr(word, role):
-                    self.set_case(getattr(word, role), self.cases[role])
+                try:
+                    getattr(word, role).case = self.cases[role]
+                except AttributeError:
+                    continue
 
     def export(self):
-        return self
-
-    def debug(self):
-        print self.words
-
-
-
+        return self._words
