@@ -1,16 +1,34 @@
 # coding 'utf-8'
+import signal
+import sys
+
+def exit_gracefully():
+    sys.exit(0)
+
+def signal_handler(signal, frame):
+    print '\n\nCaught Ctrl-C'
+    exit_gracefully()
+
+signal.signal(signal.SIGINT, signal_handler)
+from colorama import Fore, Back, Style
 
 DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
 
 from datetime import datetime
 
 class Card(object):
-    def __init__(self, rank, quotient, age, question, answer):
+    def __init__(self, rank, quotient, last_reviewed, question, answer):
         self.rank = rank
         self.quotient = quotient
-        self.age = age
+        self.last_reviewed = last_reviewed
         self.question = question.encode('utf-8')
         self.answer = answer
+
+    def age(self):
+        pass
+
+    def age(self):
+        pass
 
     @property
     def age_repr(self):
@@ -26,7 +44,18 @@ class Card(object):
         return format_string.format(self)
     
     def present(self):
-        print self.question
+        prompt_format = 'Q: {0.question}\nA: '
+        prompt = prompt_format.format(self, Style)
+        response = raw_input(prompt).decode('utf-8')
+        self.check_response(response)
+
+    def check_response(self, response):
+        if response == self.answer:
+            print "{0.GREEN}Good!{0.RESET}".format(Fore)
+        else:
+            print "{0.RED}No:{0.RESET} {1}".format(Fore, self.answer.encode('utf-8'))
+
+
 
 class Deck(object):
     def __init__(self):
@@ -67,15 +96,18 @@ class Coach(object):
 
 class Session(object):
     def __init__(self, collection_name):
-        self.collection = Collection(collection_name + '.tsv')
+        self.collection = Collection('sets/' + collection_name + '.tsv')
     
     def get_date(self):
         now = datetime.now()
         print now.strftime(DATE_FORMAT)
         
     def start(self):
-        for card in self.collection.cards:
-            card.present()
+        try:
+            for card in self.collection.cards:
+                card.present()
+        except KeyboardInterrupt:
+            exit_gracefully()
 
 
 
