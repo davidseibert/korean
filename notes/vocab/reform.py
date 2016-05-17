@@ -1,23 +1,34 @@
 # coding 'utf-8'
 
-with open ('freq', 'rb') as f:
-    lines = f.readlines()
+max_length = 0
 
+def process_line(raw_line):
+    stripped = raw_line.strip()
+    return stripped 
 
+def check_len(line):
+    if len(line) > max_length: 
+        max_length = len(line)
+    return line
+        
+ 
+def read_three_lines_at_a_time(sourcefile_path):
+    try:
+        with open(sourcefile_path) as sourcefile:
+            while True:
+                idx = process_line(next(sourcefile))
+                ko = check_len(process_line(next(sourcefile)))
+                en = process_line(next(sourcefile))
+                print idx, ko, en
+    except StopIteration:
+        pass
 
-print lines
-num_lines = len(lines)
-num_words = num_lines / 3
-print num_lines
-print num_words
-words = []
+def main():
+    sourcefile = 'freq'
+    vocab_file = read_three_lines_at_a_time(sourcefile)
 
-def get_words():
-    i = 0
-    while i < len(lines) - 3:
-        words.append((lines[i], lines[i+1].decode('utf-8'), lines[i+2]))
-        i += 3
+if __name__ == '__main__':
+    main()
 
+    
 
-get_words()
-print words[0][1]
